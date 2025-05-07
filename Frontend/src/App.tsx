@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className="logo-container">
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -16,19 +16,32 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React </h1>
-      <h1>B6500900</h1>
-      <h1>B6525781</h1>
+
+      <h1>Vite + React</h1>
+      <h2 style={{ color: '#646cff' }}>B6500900</h2>
+      <h2 style={{ color: '#61dafb' }}>B6525781</h2>
+
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+          🎯 Count is {count}
         </button>
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          Edit <code>src/App.jsx</code> and save to test HMR.
         </p>
       </div>
+
+      {/* MEME GIF SECTION */}
+      <div className="meme-section">
+        <h3>🔥 Meme of the Day 🔥</h3>
+        <img
+          src="https://media.tenor.com/3bUc8I2ZxHcAAAAC/coding-programmer.gif"
+          alt="Funny coding meme"
+          className="meme-gif"
+        />
+      </div>
+
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        Click on the Vite and React logos to learn more.
       </p>
     </>
   )
